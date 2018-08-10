@@ -16,11 +16,12 @@ function startpause(){
     }
 }
 function reset(){
-    running=0;
-    document.getElementById('start').innerHTML="start";
-    document.getElementById("output").innerHTML="00:00:00:00";
-    document.getElementById('startpause').style.backgroundColor="#dddddd";
-    document.getElementById('startpause').style.borderColor="#dddddd";
+    // running=0;
+    // document.getElementById('start').innerHTML="start";
+    // document.getElementById("output").innerHTML="00:00:00:00";
+    // document.getElementById('startpause').style.backgroundColor="#dddddd";
+    // document.getElementById('startpause').style.borderColor="#dddddd";
+    location.reload();
     
 }
 function increment(){
@@ -38,6 +39,7 @@ function increment(){
                 secs= "0" + secs;
             }
             document.getElementById("output").innerHTML= hours + ":" + mins + ":" +secs + ":" + tenth;
+            
             increment();
         },100)
 
