@@ -1,3 +1,10 @@
+body{
+    font-family: 'Gruppo', cursive;
+    background: url(1.jpg);
+    color:white;
+
+}
+
 h1{
     font-size: 5em;
 }
@@ -5,16 +12,9 @@ button{
     font-size: 30px;
     width: 140px;
     height: 60px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
-#startpause{
-    background: green;
-    border-color: green;
-}
-#reset{
-    background: gray;
-    border-color: gray;
-}
+
 .container{
     margin: auto;
     margin-top: 100px;
@@ -27,3 +27,84 @@ button{
     width: 400px; 
     height: 70px;
 }
+#controls button{
+    color: white;
+    font-family: 'Gruppo', cursive;
+   border: 0px;
+
+}
+.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	border: 2px solid rgb(28, 165, 28);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    border-radius: 5px;
+
+}
+.animated-button.thar-three:hover {
+	color: white !important;
+	background-color: transparent;
+   
+    border-radius: 5px;
+}
+.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.animated-button.thar-three:before {
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: white !important;
+	background: rgb(28, 165, 28);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    border-radius: 5px;
+
+}
+.animated-button.thar-three1 {
+	color: #fff;
+	cursor: pointer;
+	
+	position: relative;
+	border: 2px solid rgba(224, 32, 32, 0.89);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    border-radius: 5px;
+
+}
+.animated-button.thar-three1:hover {
+	color: white !important;
+	background-color: transparent;
+    
+    border-radius: 5px;
+}
+.animated-button.thar-three1:hover:before {
+	left: 0%;
+	right: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.animated-button.thar-three1:before {
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background:rgba(224, 32, 32, 0.89);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    border-radius: 5px;
+
+}
+
+

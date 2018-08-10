@@ -5,22 +5,23 @@ function startpause(){
         running=1;
         increment()
         document.getElementById('start').innerHTML="pause";
-        document.getElementById('startpause').style.backgroundColor="red";
-        document.getElementById('startpause').style.borderColor="red";
+        document.getElementById('startpause').style.backgroundColor="rgb(221, 192, 25)";
+        document.getElementById('startpause').style.borderColor="rgb(221, 192, 25)";
     }
     else{
         running=0;
         document.getElementById('start').innerHTML="resume";
-        document.getElementById('startpause').style.backgroundColor="green";
-        document.getElementById('startpause').style.borderColor="green";
+        document.getElementById('startpause').style.backgroundColor="rgb(28, 165, 28)";
+        document.getElementById('startpause').style.borderColor="rgb(28, 165, 28)";
     }
 }
 function reset(){
     running=0;
     document.getElementById('start').innerHTML="start";
     document.getElementById("output").innerHTML="00:00:00:00";
-    document.getElementById('startpause').style.backgroundColor="green";
-    document.getElementById('startpause').style.borderColor="green";
+    document.getElementById('startpause').style.backgroundColor="#dddddd";
+    document.getElementById('startpause').style.borderColor="#dddddd";
+    
 }
 function increment(){
     if(running == 1){
@@ -43,3 +44,4 @@ function increment(){
         
     }
 }
+
